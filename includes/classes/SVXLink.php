@@ -219,7 +219,7 @@ class SVXLink {
 			'LONG_IDENT_INTERVAL' => $this->settingsArray['ID_Long_IntervalMin'],
 			'EVENT_HANDLER' => '/usr/share/svxlink/events.tcl',
 			'DEFAULT_LANG' => 'en_US',
-			'RGR_SOUND_DELAY' => '1',
+			'RGR_SOUND_DELAY' => '0',
 			'REPORT_CTCSS' => $this->settingsArray['rxTone'],
 			'TX_CTCSS' => 'ALWAYS',
 			'MACROS' => 'Macros',
@@ -229,6 +229,7 @@ class SVXLink {
 			'OPEN_ON_SQL' => '1',
 			'OPEN_SQL_FLANK' => 'OPEN',
 			'IDLE_SOUND_INTERVAL' => '0',
+			'PHONETIC_SPELLING' => '0',
 		];
 		
 		if ($this->settingsArray['repeaterDTMF_disable'] == 'True') {
@@ -264,7 +265,7 @@ class SVXLink {
 			'LONG_IDENT_INTERVAL' => $this->settingsArray['ID_Long_IntervalMin'],
 			'EVENT_HANDLER' => '/usr/share/svxlink/events.tcl',
 			'DEFAULT_LANG' => 'en_US',
-			'RGR_SOUND_DELAY' => '1',
+			'RGR_SOUND_DELAY' => '0',
 			'REPORT_CTCSS' => $this->settingsArray['rxTone'],
 			'TX_CTCSS' => 'ALWAYS',
 			'MACROS' => 'Macros',
@@ -274,6 +275,7 @@ class SVXLink {
 			'OPEN_ON_SQL' => '1',
 			'OPEN_SQL_FLANK' => 'OPEN',
 			'IDLE_SOUND_INTERVAL' => '0',
+			'PHONETIC_SPELLING' => '0',
 		];
 		
 		/*
