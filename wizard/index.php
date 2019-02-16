@@ -29,7 +29,7 @@ if (!isset($_POST["page"])) {
 		"ID_Long_AppendTone"	=>		"False",
 		"ID_Long_AppendMorse"	=>		"True",
 		"ID_Long_CustomFile"	=>		"Sample_Long_ID_Clip.wav",
-		"ID_Short_IntervalMin"	=>		"10",
+		"ID_Short_IntervalMin"	=>		"0",
 		"ID_Short_AppendMorse"	=>		"False",
 		"ID_Short_CustomFile"	=>		"Sample_Short_ID_Clip.wav",
 		"ID_Morse_Amplitude"	=>		"200",
@@ -167,11 +167,11 @@ case "wizard_update":
 			$db->exec("DELETE from modules;");
 	
 			// Help Module
-			$sql_module = "INSERT INTO modules (moduleKey,moduleName,moduleEnabled,svxlinkName,svxlinkID,moduleOptions) VALUES ('1','Help','1','Help','0','')";
+			$sql_module = "INSERT INTO modules (moduleKey,moduleName,moduleEnabled,svxlinkName,svxlinkID,moduleOptions) VALUES ('1','Help','0','Help','0','')";
 			$db->exec($sql_module);
 	
 			// Parrot Module
-			$sql_module = "INSERT INTO modules (moduleKey,moduleName,moduleEnabled,svxlinkName,svxlinkID,moduleOptions) VALUES ('2','Parrot','1','Parrot','1','')";
+			$sql_module = "INSERT INTO modules (moduleKey,moduleName,moduleEnabled,svxlinkName,svxlinkID,moduleOptions) VALUES ('2','Parrot','0','Parrot','1','')";
 			$db->exec($sql_module);
 	
 			// EchoLink Module
