@@ -96,8 +96,8 @@ var jsAudioOutputOptions='<?php echo $phpAudioOutputOptions; ?>';
 									<input id="portLabel<?php echo $idNum; ?>" type="text" required="required" name="portLabel[]" placeholder="Port Label" value="<?php echo $cur_port['portLabel']; ?>" class="portLabel">
 									</span>
 									<span class="rx">
-									<input id="rxGPIO<?php echo $idNum; ?>" type="text" required="required" name="rxGPIO[]" placeholder="GPIO"  value="<?php echo $cur_port['rxGPIO']; ?>" class="rxGPIO">
-									<select id="rxAudioDev<?php echo $idNum; ?>" name="rxAudioDev[]" class="rxAudioDev">
+									<input id="rxGPIO<?php echo $idNum; ?>" title="GPIO for SQL" type="text" required="required" name="rxGPIO[]" placeholder="GPIO"  value="<?php echo $cur_port['rxGPIO']; ?>" class="rxGPIO">
+									<select id="rxAudioDev<?php echo $idNum; ?>" title="Audio for RX" name="rxAudioDev[]" class="rxAudioDev">
 										<option>---</option>
 										<?php
 										for ($device = 0; $device <  count($device_list); $device++) {
@@ -112,8 +112,8 @@ var jsAudioOutputOptions='<?php echo $phpAudioOutputOptions; ?>';
 									</select>
 									</span>
 									<span class="tx">
-									<input id="txGPIO<?php echo $idNum; ?>" type="text" required="required" name="txGPIO[]" placeholder="GPIO" value="<?php echo $cur_port['txGPIO']; ?>" class="txGPIO">
-									<select id="txAudioDev<?php echo $idNum; ?>" name="txAudioDev[]" class="txAudioDev">
+									<input id="txGPIO<?php echo $idNum; ?>" title="GPIO for PTT" type="text" required="required" name="txGPIO[]" placeholder="GPIO" value="<?php echo $cur_port['txGPIO']; ?>" class="txGPIO">
+									<select id="txAudioDev<?php echo $idNum; ?>" title="Audio for TX" name="txAudioDev[]" class="txAudioDev">
 										<option>---</option>
 										<?php
 										for ($device = 0; $device <  count($device_list); $device++) {
